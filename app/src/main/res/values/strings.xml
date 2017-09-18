@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Smart Voltmeter</string>
+    <string name="none_paired">No Paired BluetoothDevice Found</string>
+    <string name="instructions">My Smart Voltmeter is the accompanying application that will allow users to view and record voltage measurements with The Smart Digital Voltmeter.
+        Once installation has completed, pair your Bluetooth® capable device with the digital voltmeter hardware.
+        Finally you may open the Smart Digital Voltmeter application and select your appropriate Voltmeter device.
+        Now you can measure the circuit as normal by using the two terminals on the voltmeter.
+        These measurements will be displayed on the application based on the measurement the user selected on the Voltmeter hardware.
+        Hit save to save a text file of the values shown.
+        Hit screenshot to save a screenshot of all the data displayed on the screen in that instance.</string>
+
+</resources>

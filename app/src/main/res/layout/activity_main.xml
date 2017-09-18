@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="@drawable/bckgrnd"
+    android:layout_height="fill_parent"
+    >
+
+    <TextView
+        android:id="@+id/testView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtString"
+        android:text=""
+        android:textSize="15sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtString"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/testView1"
+        android:layout_alignParentBottom="true"
+        android:text=""
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Save" />
+
+
+    <TextView
+        android:id="@+id/average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average Voltage: ???"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#e3b018"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/current"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Maximum Voltage: ???"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#e3b018"
+        android:layout_below="@+id/average"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minimum Voltage = ???"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#e3b018"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/max"
+        android:layout_alignRight="@+id/max"
+        android:layout_alignEnd="@+id/max" />
+
+    <TextView
+        android:id="@+id/current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Voltage: ???"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#e3b018"
+        android:layout_below="@+id/Save"
+        android:layout_alignLeft="@+id/average"
+        android:layout_alignStart="@+id/average" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/min"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/seperator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#e3b018" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/voltage_graph"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Save"
+        android:layout_alignBottom="@+id/Save"
+        android:layout_alignLeft="@+id/min"
+        android:layout_alignStart="@+id/min"
+        android:textColor="#e3b018" />
+
+</RelativeLayout>

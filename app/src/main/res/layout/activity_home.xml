@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/bckgrnd"
+        android:fitsSystemWindows="true"
+        android:screenOrientation="portrait">
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="69dp"
+            android:text="Smart Voltmeter"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#e3b018"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="v 3.2"
+            android:textColor="#e3b018"
+             />
+
+        <Button
+            android:id="@+id/paired"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="129dp"
+            android:capitalize="none"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:enabled="true"
+            android:text="Paired Devices"
+            android:textColor="#e3b018"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/paired"
+            android:layout_alignLeft="@+id/paired"
+            android:layout_alignRight="@+id/paired"
+            android:layout_alignStart="@+id/paired"
+            android:layout_below="@+id/paired"
+            android:layout_marginTop="69dp"
+            android:enabled="true"
+            android:text="Instructions"
+            android:textColor="#e3b018"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+</LinearLayout>
